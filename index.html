@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <script src="jq.js"></script>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>wastemoney</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="fonts/fa/fontawesome-free-7.1.0-web/css/all.css">
+        <script src="main.js"></script>
+    </head>
+    <body>
+        <div class="topbar">
+            <h2 onclick="openpane('.homepane')"><i class="fa fa-home"></i></h2>
+            <h2 onclick="openpane('.editpane')"><i class="fa fa-pen"></i></h2>
+            <h2 onclick="openpane('.newpane')"><i class="fa fa-plus"></i></h2>
+            <h2 onclick="openpane('.settingspane')"><i class="fa fa-gear"></i></h2>
+        </div>
+        <div class="homepane pane">
+            <div class="dashboard">
+                <div class="texterm">
+                    <h1></h1>
+                    <h3 style="margin-top: -25px;">Your balances are:</h3>
+                </div>
+                <div class="qview">
+                    <div class="savedb dashpane">
+                        <h3><i class="fa fa-piggy-bank"></i> Savings</h3>
+                        <h1>₱eso</h1>
+                    </div>
+                    <div class="cashdb dashpane">
+                        <h3><i class="fa fa-wallet"></i> Wallet</h3>
+                        <h1>₱eso</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="recent">
+                <h3 style="margin-left: 10px;margin-bottom: 5px;margin-top: 5px;">Your recent activities are:</h3>
+                <div class="act in 1ac">Yes</div>
+                <div class="act out 2ac">Spent money on beer</div>
+                <div class="act 3ac">Moved money from Savings to Wallet</div>
+            </div>
+        </div>
+    </body>
+</html>
