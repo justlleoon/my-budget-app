@@ -1,6 +1,6 @@
 @font-face {
     font-family: Poppins;
-    src: url(./Poppins-Regular.ttf);
+    src: url(./fonts/Poppins/Poppins-Regular.ttf);
 }
 
 body{
@@ -100,11 +100,72 @@ body{
     background-color: #222529;
 }
 
+.act:active{
+    background-color: #1b1c20;
+}
+
 .in{
-    background-color: #03b101 !important;
+    background-color: #03b101;
+    transition: 0.2s;
 }
 
 .out{
-    background-color: red !important;
+    background-color: red;
+    transition: 0.2s;
+}
 
+.in:hover{
+    box-shadow: 2px 2px 20px#03b101;
+}
+
+.out:hover{
+    box-shadow: 2px 2px 20px red;
+}
+
+.in:active{
+    box-shadow: 2px 2px 20px green;
+    background-color: green;
+    transition: 0.2s;
+}
+
+.out:active{
+    box-shadow: 2px 2px 20px darkred;
+    background-color: darkred;
+    transition: 0.2s;
+}
+
+.goal{
+    background-color: #141516;
+    border-radius: 20px;
+    padding: 2px;
+    margin: 10px;
+    margin-top: 10px;
+}
+
+.btngoal{
+    display: block;
+    text-align: center;
+}
+
+.btngoal button{
+    margin: 5px;
+    padding: 10px;
+    font-family: Poppins;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    background-color: #222529;
+}
+
+.btngoal button:active{
+    background-color: #1b1c20;
+}
+
+.trackr{
+    text-align: center;
+    background-color: #222529;
+    width:fit-content;
+    margin: 10px auto;
+    padding: 20px;
+    border-radius: 10px;
 }
