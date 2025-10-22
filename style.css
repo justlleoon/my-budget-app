@@ -1,6 +1,6 @@
 @font-face {
     font-family: Poppins;
-    src: url(./Poppins-Regular.ttf);
+    src: url(./fonts/Poppins/Poppins-Regular.ttf);
 }
 
 body{
@@ -98,6 +98,7 @@ body{
     margin: 5px 10px;
     border-radius: 10px;
     background-color: #222529;
+    overflow-wrap: break-word;
 }
 
 .act:active{
@@ -168,5 +169,75 @@ body{
     margin: 10px auto;
     padding: 20px;
     border-radius: 10px;
+}
 
+.editpane h1{
+    margin-bottom: 0;
+    margin-left: 10px;
+    margin-top: 0;
+}
+
+.editpane p{
+    margin-bottom: 0;
+    margin-left: 10px;
+    margin-top: 0;
+}
+
+.balatro{
+    background-color: #141516;
+    padding-bottom: 10px;
+    padding-top:2px;
+    margin: 10px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+.adjust{
+    background-color: #141516;
+    padding-bottom: 10px;
+    padding-top:2px;
+    margin: 10px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+.actual{
+    background-color: #1b1c20;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 10px;
+    width:fit-content;
+    text-align: center;
+    margin: 10px auto;
+}
+
+.actual hr{
+    border: 2px solid white;
+}
+
+.actual input{
+    border-radius: 1000px;
+    border: 2px solid black;
+    font-family: Poppins;
+    padding-left: 10px;
+}
+
+button{
+    margin: 5px;
+    padding: 10px;
+    font-family: Poppins;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    background-color: #222529;
+}
+
+button:active{
+    background-color: #1b1c20;
+}
+
+.btndiv{
+    margin: auto;
+    width: fit-content;
 }

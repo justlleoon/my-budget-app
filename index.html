@@ -6,16 +6,16 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Mewney</title>
         <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+        <link rel="stylesheet" href="fonts/fa/fontawesome-free-7.1.0-web/css/all.css">
         <script src="main.js"></script>
         <link rel="shortcut icon" href="./fonts/rah.jpg" type="image/x-icon">
     </head>
     <body>
         <div class="topbar">
-            <h2 onclick="openpane('.homepane')"><i class="fa fa-home"></i></h2>
-            <h2 onclick="openpane('.editpane')"><i class="fa fa-book"></i></h2>
-            <h2 onclick="openpane('.newpane')"><i class="fa fa-plus"></i></h2>
-            <h2 onclick="openpane('.settingspane')"><i class="fa fa-gear"></i></h2>
+            <h2 onclick="openpane('.homepane');onstart()"><i class="fa fa-home"></i></h2>
+            <h2 onclick="openpane('.editpane');onstart()"><i class="fa fa-book"></i></h2>
+            <h2 onclick="openpane('.newpane');onstart()"><i class="fa fa-plus"></i></h2>
+            <h2 onclick="openpane('.settingspane');onstart()"><i class="fa fa-gear"></i></h2>
         </div>
         <div class="homepane pane">
             <div class="dashboard">
@@ -36,24 +36,34 @@
             </div>
             <div class="recent">
                 <h3 style="margin-left: 10px;margin-bottom: 5px;margin-top: 5px;">Recent Activity:</h3>
-                <div class="act in 1ac"><b>$20000000000000000</b><br>on Aug 25, 2025</div>
-                <div class="act out 2ac">Spent money on beer</div>
-                <div class="act 3ac">Moved money from Savings to Wallet</div>
+                <div class="act 1ac"></div>
+                <div class="act 2ac"></div>
+                <div class="act 3ac"></div>
             </div>
             <div class="goal">
-                <h3 style="margin-left: 10px;margin-bottom: 5px;margin-top: 5px;">Your savings goal:</h3>
-                <div class="trackr">
-                    <span>eating toilet water</span><br>
-                    <progress value="95" max="100"></progress><br>
-                    <span>You are <b>2000</b> away!</span>
-                </div>
-                <div class="btngoal"><button>Clear</button><button onclick="openpane('.newpane')">Set</button><button onclick="openpane('.editpane')">Adjust</button></div>
             </div>
         </div>
         <div class="editpane pane" style="display: none;">
-            <div class="baladj">
+            <div class="adjust">
+                <h1>Adjust</h1>
+                <p>Use this to <i>adjust</i> balances.</p>
+                <div class="actual">
+                    <span><i class="fa fa-piggy-bank"></i> Savings&nbsp;</span><br><input type="text" name="" id="sv-aj" placeholder="Savings Balance"><hr>
+                    <span><i class="fa fa-wallet"></i> Wallet</span><br><input type="text" name="" id="wl-aj" placeholder="Wallet Balance">
+                </div>
+                <div class="btndiv">
+                    <button id="yooo" onclick="set2text()">Save</button>
+                </div>
+            </div>
+            <!--<div class="baladj">
                 <input type="text" name="" id="hello"> Hehe
                 <button onclick="localStorage.setItem('ws-svb-ghjlio',document.getElementById('hello').value);location.reload()">Set</button>
+            </div>-->
+            <div class="balatro">
+                <h1>Transactions</h1>
+                <p>Your transaction list.</p>
+                <div class="transactlistfull">
+                </div>
             </div>
         </div>
         <div class="newpane pane" style="display: none;">
@@ -66,5 +76,4 @@
             mewney by <a href="https://justlleoon.github.io">Leon</a>
         </footer>
     </body>
-
 </html>
