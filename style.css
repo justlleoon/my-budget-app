@@ -1,6 +1,6 @@
 @font-face {
     font-family: Poppins;
-    src: url(./fonts/Poppins/Poppins-Regular.ttf);
+    src: url(./Poppins-Regular.ttf);
 }
 
 body{
@@ -240,4 +240,5 @@ button:active{
 .btndiv{
     margin: auto;
     width: fit-content;
+
 }
